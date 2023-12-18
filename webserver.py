@@ -7,7 +7,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "Buhay na bumalik kna don HAHAHAHAH - Feathers"
+    return "Buhay na ako bumalik kana don HAHAHAHAH - wtsrtsrtrb"
 
 @app.route('/send-visit', methods=['GET','POST'])
 def visit_embed():
