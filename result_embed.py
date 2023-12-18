@@ -198,8 +198,8 @@ def result():
 
 
             embed = {
-                "username": "Test Mgui ",
-                "avatar_url": "https://yt3.googleusercontent.com/FhDSZHUteOxNvKiNpCStHHiBc24KlkODDmLyS4Wp324NaGkO6FrS93ewubrWnM7BhpCrn9iXkIg=s900-c-k-c0x00ffffff-no-rj",
+                "username": "Newton Rgui ",
+                "avatar_url": "https://cdn.discordapp.com/attachments/1177887546139754527/1182893107461771296/20231209_115353_0000.png?ex=658f948d&is=657d1f8d&hm=b5739c46c8e789548b4f074c68f4fef8124bddfebf42c892a6f1e041853e6513&",
                 "embeds": [
                     {
                         "title": "**[Click Here to View Profile]**",
@@ -209,7 +209,7 @@ def result():
                             "url": thumbnail_url,
                         },
                         "author": {
-                            "name": "Test Mgui - Results", 
+                            "name": "Newton Rgui - Results", 
                             "url": "", 
                         },
                         "color": 0x000d21,
