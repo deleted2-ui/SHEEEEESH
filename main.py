@@ -16,15 +16,11 @@ load_dotenv()
 #Make sure to add Undercores in thee file_lcoation to prevent any errors.
 
 rbxlx_files = {
-    "n1": { #Theme Value make sure this not same value if you add a new theme
-        "theme_name": "Troll Theme",
-        "file_location": "Files/Arcade_theme.rbxl"
+    "nl": { #Theme Value make sure this not same value if you add a new theme
+        "theme_name": "Normal Theme",
+        "file_location": "Files/Normal_Theme.rbxlx"
     },
     # Add more themes here as needed
-    "n2": { #Theme Value make sure this not same value if you add a new theme
-        "theme_name": "Sand Theme",
-        "file_location": "Files/SAND_THEME.rbxl"
-    },
 }
 
 # Generate choices using a loop
