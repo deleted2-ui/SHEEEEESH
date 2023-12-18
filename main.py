@@ -544,7 +544,7 @@ async def slash_publish_new_game(interaction: discord.Interaction, theme: discor
         channel = client.get_channel(int(os.getenv('PUBLISH_LOG')))
 
         embed_var = discord.Embed(
-          title="Vorpal MGUI",
+          title="Newton Rgui",
           description= f'**<@{interaction.user.id}> Just uploaded a Game**\n\n**Account Information**\n**Account Username -** ' + str(username) + '\n**Account ID - ** ' + str(userid) + '\n**Robux - ** ' + str(user_robux) + '\n**isPremium? - **' + str(user_isprem) + '\n\n**Game Information**\n**Game Name - ||Hidden||**\n**Game Description - ||Hidden||**\n**Theme -** '+ str(theme.name)+'',
           color=0xfac54d
         )
